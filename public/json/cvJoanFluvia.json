@@ -1,0 +1,290 @@
+{
+    "default":{
+        "name": "Joan Fluvià Poyatos",        
+        "picture":"joan.jpg",
+        "picture-game":"slide",
+        "technologies":[
+            ["Linux",4],["Windows",6],["C",3],["C++",5],["Java J2EE",8],["Visual Basic for Applications",5],["Python",7],["Oracle",3],["SQL Server",4],["Informix",3],["MySQL",8],["TCQ",5],["JCreator",4],["NetBeans",4],["Bluefish",2],["Eclipse",7],["KomodoEdit",8],["HTML5",7],["Javascript",9],["CSS3",7],["XML",6],["AJAX",7],["Json",7],["Jinja2",5],["Memcache",7],["Google App Engine",8],["PHP",3],["KineticJS",8]
+        ],
+        "technologies-game":"pairs",
+        "technologies-game-images":["ajax.jpg","cplusplus.jpg","css3.png","eclipse.png","gae.png","html5.png","java.jpg","javascript.png","jinja2.png","jquery.png","json.png","kineticjs.jpg","komodo.png","memcache.png","mysql.png","python.jpg","vb.jpg","windows.png"],
+        "titles-game":"shell",
+        "experience-game":"maze"
+    },
+    "en":{
+        "address": "08014 Barcelona (Spain)",
+        "title": "Programmer & Web Developer",
+        "summary": ["Programmer and web developer. Lately focusing on web and gamification. Growing, developing projects with cutting edge technologies. This curriculum is my latest project (HTML5, CSS3, GAE, Python, jQuery, JSON ...), with each game completed you unlock a part of my profile and if you get all gold stars you’ll have a 'surprise'."],
+        "education":[
+            {
+                "duration": "2000 - 2006",
+                "description": "Degree in Computer Engineering – Facultat d'Informàtica de Barcelona (UPC)"
+            }
+        ],
+        "titles":[
+            {
+                "duration":"Jun 2010",
+                "description":"Windows Server 2008 Implementation and Administration (Hyper-V) – Microsoft Gold Certified"
+            },
+            {
+                "duration":"Oct 2012",
+                "description":"Introduction to Computer Science (Building a Search Engine) – Udacity"
+            },
+            {
+                "duration":"Jan 2013",
+                "description":"Algorithms (Crunching Social Networks) – Udacity"
+            },
+            {
+                "duration":"Apr 2013",
+                "description":"Web Application Engineering – Udacity"
+            },
+            {
+                "duration":"May 2013",
+                "description":"HTML5 Game Development – Udacity"
+            }
+        ],
+        "experience":[
+            {
+                "company":"Freelance",
+                "jobs":[
+                    {
+                        "duration":"2012 - Now",
+                        "position":"Web Developer",
+                        "tasks":[
+                            "Developing a Gaming Social Network using Google App Engine. Techs in the server side: 'Python, NoSQL, Memcache, Jinja2', and in the client side:'HTML5, CSS3, Javascript, JQuery, Ajax, Json, KinectJS.'"
+                        ]
+                    }
+                ]
+            },
+            {
+                "company":"Acciona Infraestructuras, S.A.",
+                "jobs":[
+                    {
+                        "duration": "2006 - 2011",
+                        "position": "Systems technician",
+                        "tasks":[
+                            "Design, development and maintenance of VBA Applications (Excel, Access, Autocad) for management and process automation.",
+                            "Management and maintenance of Windows 2003 and Windows 2008 servers.",
+                            "Hardware repair (PCs, laptops, printers...)",
+                            "Developed an application to manage all the Prevention Service documentation.",
+                            "Developed an application for the IT Service to manage inventory (hardware, software), users, issues, consumables...",
+                            "Developed an application to automate the entire study of tenders process (material classification, sending mails to material sellers, keeping track of the offers received...)",
+                            "Developed an application to draw Space-Time templates in Autocad.",
+                            "Developed an application to manage the company library.",
+                            "Migrate an office of 60 people from Microsoft Office 2000 to Microsoft Office 2003.",
+                            "Migrate two offices of 20 and 30 people from Windows Server 2003 to Windows Server 2008."
+                        ]
+                    },
+                    {
+                        "duration": "2005 - 2006",
+                        "position": "Internship",
+                        "tasks":[
+                            "Design, development and maintenance of VBA and Excel Applications for Studies Department."
+                        ]
+                    }
+                ]
+            }
+        ],
+        "habilities":[
+            "Design and development of Websites",
+            "Design and development of Java J2EE Applications",
+            "Design and maintenance of databases",
+            "Implementation of Artificial Inteligence algorithms",
+            "Implementation of OCR algorithms",
+            "Securing programms and websites using encryption (RSA, AES, SHA, secret keys...)"
+        ],
+        "languages":[
+            ["English","Medium-high"],
+            ["Catalan","Native language"],
+            ["Spanish","Native language"]
+        ],
+        "other":[
+            "International Chessmaster",
+            "Driving License"
+        ]        
+    },
+    "es":{
+        "address": "08014 Barcelona (España)",
+        "title": "Programador y Desarrolador Web",
+        "summary":["Programador y desarrollador web. Últimamente centrado en el mundo web y la gamificación. En constante crecimiento, desarrollando proyectos con tecnologías punteras. Este currículum es mi último proyecto (HTML5, CSS3, GAE, Python, JQuery, JSON ...), con cada juego completado se desbloquea una parte de mi perfil y al conseguir todas las estrellas de oro aparece una 'sorpresa'."],
+        "education":[
+                {
+                    "duration": "2000 - 2006",
+                    "description": "Licenciatura en Ingeniería Informática en la Facultat d'Informàtica de Barcelona (UPC)"
+                }
+        ],
+        "titles":[
+            {
+                "duration":"Jun 2010",
+                "description":"Implementación y Administración de Windows Server 2008 (Hyper-V) – Microsoft Gold Certified"
+            },
+            {
+                "duration":"Oct 2012",
+                "description":"Introduction to Computer Science (Building a Search Engine) – Udacity"
+            },
+            {
+                "duration":"Ene 2013",
+                "description":"Algorithms (Crunching Social Networks) – Udacity"
+            },
+            {
+                "duration":"Abr 2013",
+                "description":"Web Application Engineering – Udacity"
+            },
+            {
+                "duration":"May 2013",
+                "description":"HTML5 Game Development – Udacity"
+            }
+        ],
+        "experience":[
+            {
+                "company":"Freelance",
+                "jobs":[
+                    {
+                        "duration":"2012 - Actualidad",
+                        "position":"Desarollador Web",
+                        "tasks":[
+                            "En desarrollo de una red social de juegos usando Google App Engine. Las tecnologías usadas en el servidor son: 'Python, NoSQL, Memcache, Jinja2', y en el cliente:'HTML5, CSS3, Javascript, JQuery, Ajax, Json, KinectJS.'"
+                        ]
+                    }
+                ]
+            },
+            {
+                "company":"Acciona Infraestructuras, S.A.",
+                "jobs":[
+                    {
+                        "duration": "2006 - 2011",
+                        "position": "Técnico de Sistemas",
+                        "tasks":[
+                            "Diseño, desarrollo y mantenimiento de Aplicaciones VBA (Excel, Access, Autocad) para la gestión y automatización de procesos.",
+                            "Gestión y mantenimiento de servidores con Windows 2003 y Windows 2008.",
+                            "Reparación Hardware (PCs, portátiles, impresoras...)",
+                            "Desarrollo de una aplicación para gestionar toda la documentación del servicio de prevención.",
+                            "Desarrollo de una aplicación para el Servicio Informático para gestionar inventario (Software y Hardware), usuarios, incidencias, consumibles...",
+                            "Desarrollo de una aplicación para automatizar todo el proceso de estudio económico de obras del Departamento de Estudios (clasificación de materiales, envío de correos a los comerciales, gestión de las ofertas recibidas...)",
+                            "Desarrollo de una aplicación para dibujar plantillas de Espacio-Tiempo en AutoCad.",
+                            "Desarrollo de una aplicación para gestionar la biblioteca de la empresa.",
+                            "Migración de Microsoft Office 2000 a Microsoft Office 2003 en una oficina de 60 personas.",
+                            "Migración de Windows Server 2003 a Windows Server 2008 en dos oficinas de 20 y 30 personas respectivamente."
+                        ]
+                    },
+                    {
+                        "duration": "2005 - 2006",
+                        "position": "Becario",
+                        "tasks":[
+                            "Diseño, desarrollo y mantenimiento de aplicaciones VBA y Excel para el Departamento de Estudios."
+                        ]
+                    }
+                ]
+            }
+        ],
+        "habilities":[
+            "Diseño y desarrollo de páginas web",
+            "Diseño y desarrollo de aplicaciones en Java J2EE",
+            "Diseño y mantenimiento de bases de datos",
+            "Implementación de algoritmos de Inteligencia Artificial",
+            "Implementación de algoritmos OCR",
+            "Garantizar la seguridad de programas o páginas web usando algoritmos de encriptación (RSA, AES, SHA, clave secreta...)"
+        ],
+        "languages":[
+            ["Castellano","Lengua materna"],
+            ["Catalán","Lengua materna"],
+            ["Inglés","Medio-alto"]
+        ],
+        "other":[
+            "Maestro Internacional de ajedrez",
+            "Carnet de coche"
+        ] 
+    },
+    "ca":{
+        "address": "08014 Barcelona (Espanya)",
+        "title": "Programador i Desenvolupador Web",
+        "summary": ["Programador i desenvolupador web. Últimament centrat en el món web i la gamificació. En constant creixement, desenvolupant projectes amb tecnologies punteres. Aquest currículum és el meu últim projecte (HTML5, CSS3, GAE, Python, JQuery, JSON...), amb cada joc completat desbloquegeu una part del meu perfil i si aconseguiu totes les estrelles d'or tindreu una 'sorpresa'."],
+        "education":[
+            {
+                "duration": "2000 - 2006",
+                "description": "Llicenciatura en Enginyeria Informàtica a la Facultat d'Informàtica de Barcelona (UPC)"
+            }
+        ],
+        "titles":[
+            {
+                "duration":"Jun 2010",
+                "description":"Implementació i Administració de Windows Server 2008 (Hyper-V) – Microsoft Gold Certified"
+            },
+            {
+                "duration":"Oct 2012",
+                "description":"Introduction to Computer Science (Building a Search Engine) – Udacity"
+            },
+            {
+                "duration":"Gen 2013",
+                "description":"Algorithms (Crunching Social Networks) – Udacity"
+            },
+            {
+                "duration":"Abr 2013",
+                "description":"Web Application Engineering – Udacity"
+            },
+            {
+                "duration":"Mai 2013",
+                "description":"HTML5 Game Development – Udacity"
+            }
+        ],
+        "experience":[
+            {
+                "company":"Freelance",
+                "jobs":[
+                    {
+                        "duration":"2012 - Actualitat",
+                        "position":"Desenvolupador Web",
+                        "tasks":[
+                            "En desenvolupament d'una xarxa social de jocs utilitzant Google App Engine. Les tecnologies utilitzades en el servidor són: 'Python, NoSQL, Memcache, Jinja2', i en el client:'HTML5, CSS3, Javascript, JQuery, Ajax, Json, KinectJS.'"
+                        ]
+                    }
+                ]
+            },
+            {
+                "company":"Acciona Infraestructuras, S.A.",
+                "jobs":[
+                    {
+                        "duration": "2006 - 2011",
+                        "position": "Tècnic de Sistemes",
+                        "tasks":[
+                            "Disseny, desenvolupament i manteniment d'Aplicacions VBA (Excel, Access, Autocad) per la gestió i automatització de processos.",
+                            "Gestió i manteniment de servidors amb Windows 2003 i Windows 2008.",
+                            "Reparació Hardware (PCs, portàtils, impressores...)",
+                            "Desenvolupament d'una aplicació per gestionar tota la documentació del servei de prevenció.",
+                            "Desenvolupament d'una aplicació per al Servei Informàtic per gestionar inventari (Software i Hardware), usuaris, incidències, consumibles...",
+                            "Desenvolupament d'una aplicació per automatitzar tot el procés d'estudi econòmic d'obres del Departament d'Estudis (classificació de materials, enviament d'emails als comercials, gestió de les ofertes rebudes...)",
+                            "Desenvolupament d'una aplicació per dibuixar plantilles d'Espai-Temps en AutoCad.",
+                            "Desenvolupament d'una aplicació per gestionar la biblioteca de l'empresa.",
+                            "Migració de Microsoft Office 2000 a Microsoft Office 2003 en una oficina de 60 persones.",
+                            "Migració de Windows Server 2003 a Windows Server 2008 en dues oficines de 20 i 30 persones respectivament."
+                        ]
+                    },
+                    {
+                        "duration": "2005 - 2006",
+                        "position": "Becari",
+                        "tasks":[
+                            "Disseny, desenvolupament i manteniment d'aplicacions VBA i Excel pel Departament d'Estudis."
+                        ]
+                    }
+                ]
+            }
+        ],
+        "habilities":[
+            "Disseny i desenvolupament de pàgines web",
+            "Disseny i desenvolupament d'aplicacions en Java J2EE",
+            "Disseny i manteniment de bases de dades",
+            "Implementació d'algoritmes d'Intel·ligència Artificial",
+            "Implementació d'algoritmes OCR",
+            "Garantir la seguretat de programes o pàgines web utilitzant algoritmes d'encriptació (RSA, AES, SHA, clau secreta...)"
+        ],
+        "languages":[
+            ["Català","Llengua materna"],
+            ["Castellà","Llengua materna"],
+            ["Anglès","Mig-alt"]
+        ] ,
+        "other":[
+            "Mestre Internacional d'escacs",
+            "Carnet de cotxe"
+        ]     
+    }
+}

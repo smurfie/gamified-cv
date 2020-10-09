@@ -1,0 +1,293 @@
+html, body { 
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    font-size: medium;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+#screen{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #000;
+}
+
+#game{
+    width: 500px;
+    height: 500px;
+    background: #fff;
+    position: fixed;
+    margin-left: -250px;
+    margin-top: -250px;
+    left: 50%;
+    top: 50%;
+    z-index: 20;
+    display: none;
+}
+
+.dialog{
+    font-size: small;
+    width: 400px;
+    height: 150px;
+    background: #ccc;
+    position: fixed;
+    margin-left: -200px;
+    margin-top: -75px;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    z-index: 20;
+    display: none;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border-color: #333;
+    border-width: thick;
+    border-style: solid;
+}
+
+.dialog>.message{
+    padding: 20px 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dialog>.buttons{    
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dialog>.buttons>.button{
+    display: inline-block;
+    padding: 10px;
+    margin: 0 40px;
+    width: 70px;
+    background: #888;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    border-color: #333;
+    border-width: medium;
+    border-style: solid;
+}
+
+.dialog>.buttons>.button:hover{
+    background: #cc3;
+    cursor: pointer;
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width:100%;
+    background-color: #333;
+    z-index: 1;
+}
+
+#main{    
+    width: 800px;
+    min-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    background-image: url('/img/yellow-background.jpg');
+    background-repeat: repeat;
+}
+
+.lang{
+    float: right;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#share-buttons{
+    margin-left: 10px;
+    display: inline-block;
+    float: right;
+}
+
+#share-buttons img {
+    width: 20px;
+    padding: 5px 2px;
+    border: 0;
+    box-shadow: 0;
+    display: inline;
+    float: left;
+}
+
+.lang>img{
+    height: 20px;
+}
+
+#header span{
+    color: #ddd;
+    font-weight: bold;
+    margin-left: 30px;
+    cursor: pointer;
+    display: inline-block;
+    height: 20px;
+    padding: 5px;
+}
+
+#header span.selected{
+    color: #ff2;
+}
+
+#stars{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: 370px; 
+    margin-top: -45px; /*4 stars*/
+    width: 30px;
+}
+
+#stars>img{
+    position: absolute;
+}
+
+#animatedStar{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    margin-left: -50px;
+    margin-top: -50px;
+    left: 50%;
+    top: 50%;
+    z-index: 20;
+    display: none;
+}
+
+#loader{
+    display: block;
+    padding-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#image{
+    float: right;
+    margin-top: 30px;
+    margin-right: 50px;   
+}
+
+#image>img{
+    -moz-box-shadow: 3px 3px 5px #000;
+    -webkit-box-shadow: 3px 3px 5px #000;
+    box-shadow: 3px 3px 5px #000;
+    border: solid 4px #eee;
+}
+
+#personal,#education,#titles,#employment,#habilities,#languages,#others,#summary{
+    padding: 15px 50px;
+}
+
+#personal{
+    padding-top: 25px; 
+}
+
+#personal input,#personal textarea{
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    font-size: small;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 2px inset;
+    padding: 5px;
+    margin: 5px 0px;
+}
+
+#personal input{
+    width: 280px;
+}
+
+#personal textarea{
+    height: 80px;
+    width: 460px;    
+}
+
+#personal .button{
+    border-color: #333;
+    border-style: solid;
+    border-width: medium;
+    background: #ccc;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 150px;
+    padding: 5px;
+    margin-left: 10px;
+    text-align: center;
+    font-size: small;
+}
+
+#personal .button:hover{
+    cursor: pointer;
+    background: #dd3;
+}
+
+.company+.company{
+    padding-top: 20px;
+}
+
+.company>p:first-child{
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 5px 0px;
+}
+
+p{
+    margin:5px 0px;
+}
+
+#personal>p#name{
+    font-weight: bold;
+    font-size: larger;
+}
+
+#personal>p#title{
+    font-style: italic;
+    font-size: medium;
+}
+
+.title{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.duration{
+    font-weight: bold;
+    font-size: small;
+}
+
+li, #personal>p, #summary>p{
+    font-size: small;
+}
+
+#summary>p{
+    text-indent: 20px;
+}
+
+.more{
+    color: #06f;
+    cursor: pointer;
+}
+
+.tech1{font-size: 60%;}
+.tech2{font-size: 70%;}
+.tech3{font-size: 80%;}
+.tech4{font-size: 90%;}
+.tech5{font-size: 100%;}
+.tech6{font-size: 110%;}
+.tech7{font-size: 120%;}
+.tech8{font-size: 130%;}
+.tech9{font-size: 140%;}
+
+#techs>span{
+    margin: 2px;
+}
