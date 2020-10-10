@@ -1,7 +1,9 @@
 {
     "default":{
-        "name": "Joan Fluvià Poyatos",        
-        "picture":"joan.jpg",
+        "name": "Joan Fluvià Poyatos",
+        "picture": "joan.jpg",
+        "linkedin": "https://www.linkedin.com/in/joan-fluvia/",
+        "github": "https://github.com/smurfie",
         "picture-game":"slide",
         "technologies":[
             ["Linux",4],["Windows",6],["C",3],["C++",5],["Java J2EE",8],["Visual Basic for Applications",5],["Python",7],["Oracle",3],["SQL Server",4],["Informix",3],["MySQL",8],["TCQ",5],["JCreator",4],["NetBeans",4],["Bluefish",2],["Eclipse",7],["KomodoEdit",8],["HTML5",7],["Javascript",9],["CSS3",7],["XML",6],["AJAX",7],["Json",7],["Jinja2",5],["Memcache",7],["Google App Engine",8],["PHP",3],["KineticJS",8]

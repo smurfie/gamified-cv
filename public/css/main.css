@@ -26,58 +26,6 @@ html, body {
     display: none;
 }
 
-.dialog{
-    font-size: small;
-    width: 400px;
-    height: 150px;
-    background: #ccc;
-    position: fixed;
-    margin-left: -200px;
-    margin-top: -75px;
-    left: 50%;
-    top: 50%;
-    text-align: center;
-    z-index: 20;
-    display: none;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    border-color: #333;
-    border-width: thick;
-    border-style: solid;
-}
-
-.dialog>.message{
-    padding: 20px 5px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.dialog>.buttons{    
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.dialog>.buttons>.button{
-    display: inline-block;
-    padding: 10px;
-    margin: 0 40px;
-    width: 70px;
-    background: #888;
-    -moz-border-radius: 15px;
-    -webkit-border-radius: 15px;
-    border-radius: 15px;
-    border-color: #333;
-    border-width: medium;
-    border-style: solid;
-}
-
-.dialog>.buttons>.button:hover{
-    background: #cc3;
-    cursor: pointer;
-}
-
 #header{
     position: fixed;
     top: 0;
@@ -88,7 +36,7 @@ html, body {
     z-index: 1;
 }
 
-#main{    
+#main{
     width: 800px;
     min-height: 100%;
     margin-left: auto;
@@ -102,21 +50,6 @@ html, body {
     float: right;
     padding: 5px;
     cursor: pointer;
-}
-
-#share-buttons{
-    margin-left: 10px;
-    display: inline-block;
-    float: right;
-}
-
-#share-buttons img {
-    width: 20px;
-    padding: 5px 2px;
-    border: 0;
-    box-shadow: 0;
-    display: inline;
-    float: left;
 }
 
 .lang>img{
@@ -190,47 +123,6 @@ html, body {
     padding-top: 25px; 
 }
 
-#personal input,#personal textarea{
-    font-family: Verdana, Helvetica, Arial, sans-serif;
-    font-size: small;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    border: 2px inset;
-    padding: 5px;
-    margin: 5px 0px;
-}
-
-#personal input{
-    width: 280px;
-}
-
-#personal textarea{
-    height: 80px;
-    width: 460px;    
-}
-
-#personal .button{
-    border-color: #333;
-    border-style: solid;
-    border-width: medium;
-    background: #ccc;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    display: inline-block;
-    width: 150px;
-    padding: 5px;
-    margin-left: 10px;
-    text-align: center;
-    font-size: small;
-}
-
-#personal .button:hover{
-    cursor: pointer;
-    background: #dd3;
-}
-
 .company+.company{
     padding-top: 20px;
 }
@@ -255,6 +147,12 @@ p{
     font-size: medium;
 }
 
+#personal #links img {
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 24px;
+}
+
 .title{
     text-transform: uppercase;
     font-weight: bold;
@@ -267,6 +165,10 @@ p{
 
 li, #personal>p, #summary>p{
     font-size: small;
+}
+
+#summary {
+    margin-top: 30px;
 }
 
 #summary>p{

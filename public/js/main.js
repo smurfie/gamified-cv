@@ -4,7 +4,6 @@ $(document).ready(function() {
     var loaded=0;
     var cvTemplate;
     var cv;
-    var sendingMessage=false;
     var stage= new Kinetic.Stage({
         container: 'game',
         width: 500,
@@ -52,7 +51,7 @@ $(document).ready(function() {
         circle: null
     };
     var img = $("<img id='loader' src='/img/loader.gif'>");
-    $('#main').append(img);    
+    $('#main').append(img);
     $.getJSON('/json/cvJoanFluvia.json', function(data){
         cv = data;
         jsonLoaded();
@@ -145,38 +144,34 @@ $(document).ready(function() {
         var name = $("<p id='name'>"+getCV("name")+"</p>");
         var title = $("<p id='title'>"+getCV("title")+"</p>");
         var address = $("<p>"+getCV("address")+"</p>");
-        
+        var links = $("<p id='links'></p>");
+        var linkedin = $("<a href='" + getCV("linkedin") + "'><img title='linkedin' src='/img/linkedin.png'/></a>");
+        var github = $("<a href='" + getCV("github") + "'><img title='github' src='/img/github.png'/></a>");
+        links.append(linkedin);
+        links.append(github);
+
         personal.append(name);
         personal.append(title);
         personal.append(address);
-
-        var contactForm=$('<div></div>');
-        var contactBody=$('<textarea id="emailMessage" maxlength="2000" placeholder="'+getCVTemplate(22)+'"></textarea>');
-        var contactEmail=$('<input id="emailContact" type="email" name="email" maxlength="100" placeholder="'+getCVTemplate(23)+'">');
-        var contactButton=$('<div class="button">'+getCVTemplate(24)+'</div>');
-        contactButton.click(sendEmail);        
-        contactForm.append(contactBody);
-        contactForm.append(contactEmail);
-        contactForm.append(contactButton);
-        personal.append(contactForm);        
+        personal.append(links);
         
-        var summary=$("<div id='summary'><div class='title'>"+getCVTemplate(31)+"</div><hr></div>");
+        var summary=$("<div id='summary'><div class='title'>"+getCVTemplate(23)+"</div><hr></div>");
         var sumList=getCV("summary");
         for (var i=0; i<sumList.length;i++) {
             var sumElem = $("<p>"+sumList[i]+"</p>");
             if (i>0) {
                 sumElem.hide();
             }
-            summary.append(sumElem);            
+            summary.append(sumElem);
         }
         if (sumList.length>1) {
-            sumMore=$('<p class="more">'+getCVTemplate(32)+'</p>');
+            sumMore=$('<p class="more">'+getCVTemplate(24)+'</p>');
             sumMore.click(function(){
                 $('#summary>p').fadeIn();
                 $(this).hide()
             });
             summary.append(sumMore);
-        }        
+        }
         
         var education = $("<div id='education'><div class='title'>"+getCVTemplate(4)+"</div><hr></div>");
         var eduList = getCV("education");
@@ -256,8 +251,7 @@ $(document).ready(function() {
             var other = $("<li><p>"+otList[i]+"</p></li>");
             list.append(other);
         }
-        others.append(list);        
-        
+        others.append(list);
         $('#main').append(personal);
         $('#main').append(summary);
         $('#main').append(education);
@@ -276,13 +270,13 @@ $(document).ready(function() {
         var image = $("<div id='image'></div>");
         if (cvType == "gamified" && getCV("picture-game") == "slide") {
             if (!loadString("slideMedal")) {
-                var picture = $("<img src='/img/question-mark.jpg' width='200'>").css('cursor','pointer');                
+                var picture = $("<img src='/img/question-mark.jpg' width='150'>").css('cursor','pointer');                
             } else {
-                var picture = $("<img src='/img/"+getCV("picture")+"' width='200' title='"+getCVTemplate(13)+"'>").css('cursor','pointer');                
+                var picture = $("<img src='/img/"+getCV("picture")+"' width='150' title='"+getCVTemplate(13)+"'>").css('cursor','pointer');                
             }   
             picture.click(slideLoadGame);
         } else {
-            var picture = $("<img src='/img/"+getCV("picture")+"' width='200'>");
+            var picture = $("<img src='/img/"+getCV("picture")+"' width='150'>");
         }
         image.append(picture);
         return image;
@@ -373,7 +367,7 @@ $(document).ready(function() {
     }
     
     function loadTrophy() {
-        var img=$("<img id='trophy' title='"+getCVTemplate(30)+"' src='/img/trophy.png' width='30px' height='30px'>");
+        var img=$("<img id='trophy' title='"+getCVTemplate(22)+"' src='/img/trophy.png' width='30px' height='30px'>");
         img.css('opacity',0.8);
         img.on('mouseenter', function(){
             document.body.style.cursor = "pointer";
@@ -407,54 +401,6 @@ $(document).ready(function() {
         var img=$("<img id='"+s+"Star' class='star' src='/img/"+strImage+"' width='30px' height='30px'>");        
         $("#stars").append(img);
         img.css("top",img.index()*30);
-    }
-    
-    function sendEmail() {
-        if (sendingMessage) {
-            return;
-        }
-        if ($('#emailMessage').val().length>0 && $('#emailContact').val().length>0) {
-            $("#emailMessage").attr("disabled", "disabled");
-            $("#emailContact").attr("disabled", "disabled");
-            sendingMessage=true;
-            $.post("sendEmail",{message: $('#emailMessage').val(), contact:$('#emailContact').val()})
-            .done(function(error){
-                if (error == "False") { //Correct
-                    warningMessage(getCVTemplate(26));
-                } else { //Error: Limit 3 messages
-                    warningMessage(getCVTemplate(27));
-                }
-                sendingMessage=false;
-                $("#emailMessage").removeAttr("disabled");
-                $("#emailContact").removeAttr("disabled");
-            })
-            .fail(function(data){
-                warningMessage(getCVTemplate(28));
-                sendingMessage=false;
-                $("#emailMessage").removeAttr("disabled");
-                $("#emailContact").removeAttr("disabled");
-            })
-        } else {
-            warningMessage(getCVTemplate(29));
-        }        
-    }
-    
-    function warningMessage(m) {
-        $('#screen').css({"display": "block", opacity: 0.7, "width":$(document).width(),"height":$(document).height(),"z-index":2});
-        var dialog = $('<div class="dialog"></div>').css('display','block');
-        
-        var message = $('<div class="message">'+m+'</div>');
-        var accept = $('<div class="button">'+getCVTemplate(25)+'</div>');
-        
-        var buttons = $('<div class="buttons"></div>')
-        accept.click(function(){
-            $(this).parent().parent().remove();
-            $('#screen').css({"display": "none", "z-index":0});
-        });
-        dialog.append(message);
-        buttons.append(accept);
-        dialog.append(buttons);
-        $('body').append(dialog);
     }
     
     function resetProgress() {
