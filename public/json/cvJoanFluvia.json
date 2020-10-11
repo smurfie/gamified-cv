@@ -2,9 +2,24 @@
     "default":{
         "name": "Joan Fluvià Poyatos",
         "picture": "joan.jpg",
-        "linkedin": "https://www.linkedin.com/in/joan-fluvia/",
-        "github": "https://github.com/smurfie",
         "picture-game":"slide",
+        "links": [
+            {
+                "title": "Linkedin",
+                "image": "linkedin.png",
+                "link": "https://www.linkedin.com/in/joan-fluvia/"
+            },
+            {
+                "title": "Infojobs",
+                "image": "infojobs.png",
+                "link": "https://www.infojobs.net/joan-fluvia-poyatos.prf"
+            },
+            {
+                "title": "Github",
+                "image": "github.png",
+                "link": "https://github.com/smurfie"
+            }
+        ],
         "technologies":[
             ["Linux",4],["Windows",6],["C",3],["C++",5],["Java J2EE",8],["Visual Basic for Applications",5],["Python",7],["Oracle",3],["SQL Server",4],["Informix",3],["MySQL",8],["TCQ",5],["JCreator",4],["NetBeans",4],["Bluefish",2],["Eclipse",7],["KomodoEdit",8],["HTML5",7],["Javascript",9],["CSS3",7],["XML",6],["AJAX",7],["Json",7],["Jinja2",5],["Memcache",7],["Google App Engine",8],["PHP",3],["KineticJS",8]
         ],
@@ -15,8 +30,8 @@
     },
     "en":{
         "address": "08014 Barcelona (Spain)",
-        "title": "Programmer & Web Developer",
-        "summary": ["Programmer and web developer. Lately focusing on web and gamification. Growing, developing projects with cutting edge technologies. This curriculum is my latest project (HTML5, CSS3, GAE, Python, jQuery, JSON ...), with each game completed you unlock a part of my profile and if you get all gold stars you’ll have a 'surprise'."],
+        "title": "Full Stack Developer",
+        "summary": ["Full Stack Developer always learning and passionate in new technologies. My top skills actually are Liferay, RESTful APIs, Angular, Javascript and Sass. This curriculum is a project made a long time ago (2013) which I updated and adapted it to nowadays (Oct 2020). With each game completed you unlock a part of my profile and if you get all gold stars you’ll have a 'surprise'."],
         "education":[
             {
                 "duration": "2000 - 2006",
@@ -25,24 +40,20 @@
         ],
         "titles":[
             {
-                "duration":"Jun 2010",
-                "description":"Windows Server 2008 Implementation and Administration (Hyper-V) – Microsoft Gold Certified"
+                "duration":"Jul 2104",
+                "description":"Duolingo Proficiency Exam in English: Advanced"
             },
             {
-                "duration":"Oct 2012",
-                "description":"Introduction to Computer Science (Building a Search Engine) – Udacity"
+                "duration":"Mar 2015",
+                "description":"Gamification - Coursera"
             },
             {
-                "duration":"Jan 2013",
-                "description":"Algorithms (Crunching Social Networks) – Udacity"
+                "duration":"Dec 2016",
+                "description":"Desarrollo web con Angular 2 - Netmind"
             },
             {
-                "duration":"Apr 2013",
-                "description":"Web Application Engineering – Udacity"
-            },
-            {
-                "duration":"May 2013",
-                "description":"HTML5 Game Development – Udacity"
+                "duration":"Oct 2017",
+                "description":"Scrum Master - Sopra Steria"
             }
         ],
         "experience":[
@@ -107,8 +118,8 @@
     },
     "es":{
         "address": "08014 Barcelona (España)",
-        "title": "Programador y Desarrolador Web",
-        "summary":["Programador y desarrollador web. Últimamente centrado en el mundo web y la gamificación. En constante crecimiento, desarrollando proyectos con tecnologías punteras. Este currículum es mi último proyecto (HTML5, CSS3, GAE, Python, JQuery, JSON ...), con cada juego completado se desbloquea una parte de mi perfil y al conseguir todas las estrellas de oro aparece una 'sorpresa'."],
+        "title": "Full Stack Developer",
+        "summary":["Full Stack Developer siempre en desarrollo y apasionado por las nuevas tecnologías. Actualmente las tecnologías que más uso son Liferay, RESTful APIs, Angular, Javascript y Sass. Este currículum es un proyecto hecho hace tiempo (2013) que ha sido actualizado y adaptado a día de hoy (Oct 2020). Con cada juego completado se desbloquea una parte de mi perfil y al conseguir todas las estrellas de oro aparece una 'sorpresa'."],
         "education":[
                 {
                     "duration": "2000 - 2006",
@@ -117,24 +128,20 @@
         ],
         "titles":[
             {
-                "duration":"Jun 2010",
-                "description":"Implementación y Administración de Windows Server 2008 (Hyper-V) – Microsoft Gold Certified"
+                "duration":"Jul 2104",
+                "description":"Duolingo Proficiency Exam in English: Advanced"
             },
             {
-                "duration":"Oct 2012",
-                "description":"Introduction to Computer Science (Building a Search Engine) – Udacity"
+                "duration":"Mar 2015",
+                "description":"Gamification - Coursera"
             },
             {
-                "duration":"Ene 2013",
-                "description":"Algorithms (Crunching Social Networks) – Udacity"
+                "duration":"Dic 2016",
+                "description":"Desarrollo web con Angular 2 - Netmind"
             },
             {
-                "duration":"Abr 2013",
-                "description":"Web Application Engineering – Udacity"
-            },
-            {
-                "duration":"May 2013",
-                "description":"HTML5 Game Development – Udacity"
+                "duration":"Oct 2017",
+                "description":"Scrum Master - Sopra Steria"
             }
         ],
         "experience":[
@@ -199,8 +206,8 @@
     },
     "ca":{
         "address": "08014 Barcelona (Espanya)",
-        "title": "Programador i Desenvolupador Web",
-        "summary": ["Programador i desenvolupador web. Últimament centrat en el món web i la gamificació. En constant creixement, desenvolupant projectes amb tecnologies punteres. Aquest currículum és el meu últim projecte (HTML5, CSS3, GAE, Python, JQuery, JSON...), amb cada joc completat desbloquegeu una part del meu perfil i si aconseguiu totes les estrelles d'or tindreu una 'sorpresa'."],
+        "title": "Full Stack Developer",
+        "summary": ["Full Stack Developer sempre en desenvolupament i apassionat per les noves tecnologies. Actualment les tecnologies que més utilitzo són Liferay, RESTful APIs, Angular, Javascript i Sass. Aquest currículum és un projecte fet fa temps (2013) que he actualizat i adaptat a dia d'avui (Oct 2020). Amb cada joc completat desbloquegeu una part del meu perfil i si aconseguiu totes les estrelles d'or tindreu una 'sorpresa'."],
         "education":[
             {
                 "duration": "2000 - 2006",
@@ -209,24 +216,20 @@
         ],
         "titles":[
             {
-                "duration":"Jun 2010",
-                "description":"Implementació i Administració de Windows Server 2008 (Hyper-V) – Microsoft Gold Certified"
+                "duration":"Jul 2104",
+                "description":"Duolingo Proficiency Exam in English: Advanced"
             },
             {
-                "duration":"Oct 2012",
-                "description":"Introduction to Computer Science (Building a Search Engine) – Udacity"
+                "duration":"Mar 2015",
+                "description":"Gamification - Coursera"
             },
             {
-                "duration":"Gen 2013",
-                "description":"Algorithms (Crunching Social Networks) – Udacity"
+                "duration":"Des 2016",
+                "description":"Desarrollo web con Angular 2 - Netmind"
             },
             {
-                "duration":"Abr 2013",
-                "description":"Web Application Engineering – Udacity"
-            },
-            {
-                "duration":"Mai 2013",
-                "description":"HTML5 Game Development – Udacity"
+                "duration":"Oct 2017",
+                "description":"Scrum Master - Sopra Steria"
             }
         ],
         "experience":[

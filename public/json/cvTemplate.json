@@ -1,9 +1,5 @@
 {
     "default":[
-        "",
-        "",
-        "",
-        "",
         "Education",
         "Titles and Courses",
         "Employment History",
@@ -12,7 +8,6 @@
         "Others",
         "Normal CV",
         "Gamified CV",
-        "Click to select",
         "Click to play again!",
         "Time",
         "Highscore",
@@ -27,10 +22,6 @@
         "See more..."
     ],
     "en":[
-        "",
-        "",
-        "",
-        "",
         "Education",
         "Titles and Courses",
         "Employment History",
@@ -39,7 +30,6 @@
         "Others",
         "Normal CV",
         "Gamified CV",
-        "Click to select",
         "Click to play again!",
         "Time",
         "Highscore",
@@ -54,10 +44,6 @@
         "See more..."
     ],
     "es":[
-        "",
-        "",
-        "",
-        "",
         "Formación Académica",
         "Títulos y Cursos",
         "Experiencia Profesional",
@@ -66,7 +52,6 @@
         "Otros Datos de Interés",
         "CV normal",
         "CV gamificado",
-        "Clicka para seleccionar",
         "Clicka para jugar otra vez!",
         "Tiempo",
         "Record",
@@ -81,10 +66,6 @@
         "Ver más..."
     ],
     "ca":[
-        "",
-        "",
-        "",
-        "",
         "Formació Acadèmica",
         "Títols i Cursos",
         "Experiència Professional",
@@ -93,7 +74,6 @@
         "Altres Dades d'Interès",
         "CV normal",
         "CV gamificat",
-        "Clicka per seleccionar",
         "Clicka per jugar un altre cop!",
         "Temps",
         "Rècord",

@@ -105,12 +105,12 @@ $(document).ready(function() {
         var cvType = detectCVType(); //"gamified / boring
         $('#header>span').remove();
         if (cvType=="gamified") {
-            $('#header').append($("<span>"+getCVTemplate(10)+"</span>").click(changeCVType));
-            $('#header').append($("<span class='selected'>"+getCVTemplate(11)+"</span>").click(changeCVType));
+            $('#header').append($("<span>"+getCVTemplate(6)+"</span>").click(changeCVType));
+            $('#header').append($("<span class='selected'>"+getCVTemplate(7)+"</span>").click(changeCVType));
         }
         else{
-            $('#header').append($("<span class='selected'>"+getCVTemplate(10)+"</span>").click(changeCVType));
-            $('#header').append($("<span>"+getCVTemplate(11)+"</span>").click(changeCVType));
+            $('#header').append($("<span class='selected'>"+getCVTemplate(6)+"</span>").click(changeCVType));
+            $('#header').append($("<span>"+getCVTemplate(7)+"</span>").click(changeCVType));
         }        
         loadMain(cvType); //Depending on the CV type maybe is better to call another function
     }
@@ -144,19 +144,24 @@ $(document).ready(function() {
         var name = $("<p id='name'>"+getCV("name")+"</p>");
         var title = $("<p id='title'>"+getCV("title")+"</p>");
         var address = $("<p>"+getCV("address")+"</p>");
+
         var links = $("<p id='links'></p>");
-        var linkedin = $("<a href='" + getCV("linkedin") + "'><img title='linkedin' src='/img/linkedin.png'/></a>");
-        var github = $("<a href='" + getCV("github") + "'><img title='github' src='/img/github.png'/></a>");
-        links.append(linkedin);
-        links.append(github);
+        var linksList = getCV("links");
+        for (var i=0; i<linksList.length;i++) {
+            var linkElement = linksList[i];
+            var imgTag = $("<img title='" + linkElement.title + "' src='/img/"+ linkElement.image + "'/>");
+            var aTag = $("<a href='" + linkElement.link + "' target='_blank'></a>");
+            aTag.append(imgTag);
+            links.append(aTag);
+        }
 
         personal.append(name);
         personal.append(title);
         personal.append(address);
         personal.append(links);
         
-        var summary=$("<div id='summary'><div class='title'>"+getCVTemplate(23)+"</div><hr></div>");
-        var sumList=getCV("summary");
+        var summary = $("<div id='summary'><div class='title'>"+getCVTemplate(18)+"</div><hr></div>");
+        var sumList = getCV("summary");
         for (var i=0; i<sumList.length;i++) {
             var sumElem = $("<p>"+sumList[i]+"</p>");
             if (i>0) {
@@ -165,7 +170,7 @@ $(document).ready(function() {
             summary.append(sumElem);
         }
         if (sumList.length>1) {
-            sumMore=$('<p class="more">'+getCVTemplate(24)+'</p>');
+            sumMore=$('<p class="more">'+getCVTemplate(19)+'</p>');
             sumMore.click(function(){
                 $('#summary>p').fadeIn();
                 $(this).hide()
@@ -173,7 +178,7 @@ $(document).ready(function() {
             summary.append(sumMore);
         }
         
-        var education = $("<div id='education'><div class='title'>"+getCVTemplate(4)+"</div><hr></div>");
+        var education = $("<div id='education'><div class='title'>"+getCVTemplate(0)+"</div><hr></div>");
         var eduList = getCV("education");
         for (var i=0; i<eduList.length;i++) {
             var element = $("<div class='school'></div>");
@@ -184,7 +189,7 @@ $(document).ready(function() {
             education.append(element);
         }
         
-        var titles = $("<div id='titles'><div class='title'>"+getCVTemplate(5)+"</div><hr></div>");
+        var titles = $("<div id='titles'><div class='title'>"+getCVTemplate(1)+"</div><hr></div>");
         var titList = getCV("titles");
         for (var i=0; i<titList.length;i++) {
             var element = $("<div class='course'></div>");
@@ -195,7 +200,7 @@ $(document).ready(function() {
             titles.append(element);
         }
         
-        var employment = $("<div id='employment'><div class='title'>"+getCVTemplate(6)+"</div><hr></div>");
+        var employment = $("<div id='employment'><div class='title'>"+getCVTemplate(2)+"</div><hr></div>");
         var empList = getCV("experience");
         for (var i=0; i<empList.length;i++) {
             var element = $("<div class='company'></div>");
@@ -218,7 +223,7 @@ $(document).ready(function() {
             employment.append(element);
         }
         
-        var habilities = $("<div id='habilities'><div class='title'>"+getCVTemplate(7)+"</div><hr></div>");
+        var habilities = $("<div id='habilities'><div class='title'>"+getCVTemplate(3)+"</div><hr></div>");
         var habList = getCV("habilities");
         var list = $("<ul></ul>");
         for (var i=0; i<habList.length;i++) {
@@ -227,15 +232,15 @@ $(document).ready(function() {
         }
         var techs = $("<div id='techs'></div>");
         var techList = getCV("technologies");
-        shuffleArray(techList);        
+        shuffleArray(techList);
         for (var i=0; i<techList.length;i++) {
             var tech = $("<span class='tech"+techList[i][1]+"'> "+techList[i][0]+" </span>");
             techs.append(tech);
         }
-        habilities.append(list);        
+        habilities.append(list);
         habilities.append(techs);
         
-        var languages = $("<div id='languages'><div class='title'>"+getCVTemplate(8)+"</div><hr></div>");
+        var languages = $("<div id='languages'><div class='title'>"+getCVTemplate(4)+"</div><hr></div>");
         var list = $("<ul></ul>");
         var langList = getCV("languages");
         for (var i=0; i<langList.length;i++) {
@@ -244,7 +249,7 @@ $(document).ready(function() {
         }
         languages.append(list);
         
-        var others = $("<div id='others'><div class='title'>"+getCVTemplate(9)+"</div><hr></div>");
+        var others = $("<div id='others'><div class='title'>"+getCVTemplate(5)+"</div><hr></div>");
         var otList = getCV("other");
         var list = $("<ul></ul>");
         for (var i=0; i<otList.length;i++) {
@@ -272,7 +277,7 @@ $(document).ready(function() {
             if (!loadString("slideMedal")) {
                 var picture = $("<img src='/img/question-mark.jpg' width='150'>").css('cursor','pointer');                
             } else {
-                var picture = $("<img src='/img/"+getCV("picture")+"' width='150' title='"+getCVTemplate(13)+"'>").css('cursor','pointer');                
+                var picture = $("<img src='/img/"+getCV("picture")+"' width='150' title='"+getCVTemplate(8)+"'>").css('cursor','pointer');                
             }   
             picture.click(slideLoadGame);
         } else {
@@ -348,7 +353,7 @@ $(document).ready(function() {
             if (getCV("technologies-game") == "pairs") {
                 loadStar("pairs");
             }
-            var img=$("<img title='"+getCVTemplate(18)+"' src='/img/reset.png' width='30px' height='30px'>");
+            var img=$("<img title='"+getCVTemplate(13)+"' src='/img/reset.png' width='30px' height='30px'>");
             img.css('opacity',0.2);
             img.on('mouseenter', function(){
                 document.body.style.cursor = "pointer";
@@ -367,7 +372,7 @@ $(document).ready(function() {
     }
     
     function loadTrophy() {
-        var img=$("<img id='trophy' title='"+getCVTemplate(22)+"' src='/img/trophy.png' width='30px' height='30px'>");
+        var img=$("<img id='trophy' title='"+getCVTemplate(17)+"' src='/img/trophy.png' width='30px' height='30px'>");
         img.css('opacity',0.8);
         img.on('mouseenter', function(){
             document.body.style.cursor = "pointer";
@@ -407,9 +412,9 @@ $(document).ready(function() {
         $('#screen').css({"display": "block", opacity: 0.7, "width":$(document).width(),"height":$(document).height(),"z-index":2});
         var dialog = $('<div class="dialog"></div>').css('display','block');
         
-        var message = $('<div class="message">'+getCVTemplate(19)+'</div>');
-        var answerYes = $('<div class="button">'+getCVTemplate(20)+'</div>');
-        var answerNo = $('<div class="button">'+getCVTemplate(21)+'</div>');
+        var message = $('<div class="message">'+getCVTemplate(14)+'</div>');
+        var answerYes = $('<div class="button">'+getCVTemplate(15)+'</div>');
+        var answerNo = $('<div class="button">'+getCVTemplate(16)+'</div>');
         var buttons = $('<div class="buttons"></div>')
         answerYes.click(deleteData);
         answerNo.click(function(){
@@ -1079,16 +1084,16 @@ $(document).ready(function() {
     
     function slideEndScreen() {
         $('#image>img').attr('src',"/img/"+getCV("picture"));
-        $('#image>img').attr('title', getCVTemplate(13));
+        $('#image>img').attr('title', getCVTemplate(8));
         stage.getLayers()[0].remove()
         var layer = backgroundLayer("#ccc");
-        var text = createText(getCVTemplate(14)+": "+Math.round(slideGame.time/10)/100, 0, 40, 500, 80);
+        var text = createText(getCVTemplate(9)+": "+Math.round(slideGame.time/10)/100, 0, 40, 500, 80);
         layer.add(text);
         var highscore = slideGame.time;
         if (loadString("slideTime") && slideGame.time>parseInt(loadString("slideTime"))) {
             highscore = loadString("slideTime");
         }
-        var bestText = createText(getCVTemplate(15)+": "+Math.round(highscore/10)/100, 0, 80, 500, 100);
+        var bestText = createText(getCVTemplate(10)+": "+Math.round(highscore/10)/100, 0, 80, 500, 100);
         layer.add(bestText);
         var textBronze = createText("--.--", 50, 250, 100, 50);
         layer.add(textBronze);
@@ -1115,9 +1120,9 @@ $(document).ready(function() {
     
     //PAIRS
     function pairsLoadGame() {
-        pop();        
+        pop();
         var layer = backgroundLayer("#ccc");
-        var text = createText(getCVTemplate(16)+"...",0,100,500,80);
+        var text = createText(getCVTemplate(11)+"...",0,100,500,80);
         var images = getCV("technologies-game-images");
         pairsGame.imagesLoaded = 0;
         var text2 = createText("("+pairsGame.imagesLoaded+"/"+(images.length+1)+")...",0,200,500,80);
@@ -1339,13 +1344,13 @@ $(document).ready(function() {
         $('#habilities>img').css('opacity',0.2);
         stage.getLayers()[0].remove();
         var layer = backgroundLayer("#ccc");
-        var text = createText(getCVTemplate(14)+": "+Math.round(pairsGame.time/10)/100, 0, 40, 500, 80);
+        var text = createText(getCVTemplate(9)+": "+Math.round(pairsGame.time/10)/100, 0, 40, 500, 80);
         layer.add(text);
         var highscore = pairsGame.time;
         if (loadString("pairsTime") && pairsGame.time>parseInt(loadString("pairsTime"))) {
             highscore = loadString("pairsTime");
         }
-        var bestText = createText(getCVTemplate(15)+": "+Math.round(highscore/10)/100, 0, 80, 500, 100);
+        var bestText = createText(getCVTemplate(10)+": "+Math.round(highscore/10)/100, 0, 80, 500, 100);
         layer.add(bestText);
         var textBronze = createText("--.--", 50, 250, 100, 50);
         layer.add(textBronze);
@@ -1640,13 +1645,13 @@ $(document).ready(function() {
         $('#titles>img').css('opacity',0.2);
         stage.getLayers()[0].remove();
         var layer = backgroundLayer("#ccc");
-        var text = createText(getCVTemplate(17)+": "+shellGame.score+"/5", 0, 40, 500, 80);
+        var text = createText(getCVTemplate(12)+": "+shellGame.score+"/5", 0, 40, 500, 80);
         layer.add(text);
         var highscore = shellGame.score;
         if (loadString("shellScore") && shellGame.score<parseInt(loadString("shellScore"))) {
             highscore = loadString("shellScore");
         }
-        var bestText = createText(getCVTemplate(15)+": "+highscore+"/5", 0, 80, 500, 100);
+        var bestText = createText(getCVTemplate(10)+": "+highscore+"/5", 0, 80, 500, 100);
         layer.add(bestText);
         var textBronze = createText("(-/5)", 50, 250, 100, 50);
         layer.add(textBronze);
@@ -2036,13 +2041,13 @@ $(document).ready(function() {
         stage.getLayers()[1].remove();
         stage.getLayers()[0].remove();
         var layer = backgroundLayer("#ccc");
-        var text = createText(getCVTemplate(14)+": "+Math.round(mazeGame.time/10)/100, 0, 40, 500, 80);
+        var text = createText(getCVTemplate(9)+": "+Math.round(mazeGame.time/10)/100, 0, 40, 500, 80);
         layer.add(text);
         var highscore = mazeGame.time;
         if (loadString("mazeTime") && mazeGame.time>parseInt(loadString("mazeTime"))) {
             highscore = loadString("mazeTime");
         }
-        var bestText = createText(getCVTemplate(15)+": "+Math.round(highscore/10)/100, 0, 80, 500, 100);
+        var bestText = createText(getCVTemplate(10)+": "+Math.round(highscore/10)/100, 0, 80, 500, 100);
         layer.add(bestText);
         var textBronze = createText("--.--", 50, 250, 100, 50);
         layer.add(textBronze);
