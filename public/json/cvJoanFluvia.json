@@ -21,10 +21,46 @@
             }
         ],
         "technologies":[
-            ["Linux",4],["Windows",6],["C",3],["C++",5],["Java J2EE",8],["Visual Basic for Applications",5],["Python",7],["Oracle",3],["SQL Server",4],["Informix",3],["MySQL",8],["TCQ",5],["JCreator",4],["NetBeans",4],["Bluefish",2],["Eclipse",7],["KomodoEdit",8],["HTML5",7],["Javascript",9],["CSS3",7],["XML",6],["AJAX",7],["Json",7],["Jinja2",5],["Memcache",7],["Google App Engine",8],["PHP",3],["KineticJS",8]
+            ["Liferay",9],
+            ["Angular",9],
+            ["RESTfull API",8],
+            ["Sass",8],
+            ["Git",8],
+            ["Java",7],
+            ["Javascript",7],
+            ["CSS",7],
+            ["Jquery",7],
+            ["Bootstrap",7],
+            ["MySQL",7],
+            ["Swagger",6],
+            ["JUnit",6],
+            ["NodeJS",6],
+            ["Json",6],
+            ["HTML5",6],
+            ["Eclipse",6],
+            ["Visual Studio Code",6],
+            ["XML",5],
+            ["Selenium",5],
+            ["SQL Server",5],
+            ["Postman",5],
+            ["Jest",5],
+            ["Visual Basic for Applications",4],
+            ["Toad",4],
+            ["Jenkins",4],
+            ["Google App Engine",4],
+            ["TCQ",4],
+            ["Oracle",4],
+            ["Kotlin",3],
+            ["Fiddler",3],
+            ["Python",3],
+            ["KineticJS",3],
+            ["Jinja2",2],
+            ["PHP",2],
+            ["Informix",1],
+            ["Memcache",1]
         ],
         "technologies-game":"pairs",
-        "technologies-game-images":["ajax.jpg","cplusplus.jpg","css3.png","eclipse.png","gae.png","html5.png","java.jpg","javascript.png","jinja2.png","jquery.png","json.png","kineticjs.jpg","komodo.png","memcache.png","mysql.png","python.jpg","vb.jpg","windows.png"],
+        "technologies-game-images":["ajax.jpg","angular.png", "bootstrap.png", "css3.png","eclipse.png","gae.png","git.png","html5.png","java.jpg","javascript.png","jquery.png","json.png","junit.png","mysql.png","liferay.png","sass.png","swagger.png","vscode.png"],
         "titles-game":"shell",
         "experience-game":"maze"
     },
@@ -58,10 +94,80 @@
         ],
         "experience":[
             {
+                "company":"Sopra Steria",
+                "jobs":[
+                    {
+                        "duration":"Nov 2019 - Now",
+                        "position":"Full Stack Developer",
+                        "tasks":[
+                            "Development of a web portal with Angular and Springboot",
+                            "Migration of angular components to new internal structure",
+                            "Technologies: Angular, SpringBoot, RESTful API, Sass, Java, Kotlin..."
+                        ]
+                    },
+                    {
+                        "duration":"Feb 2019 - Nov 2019",
+                        "position":"Full Stack Developer / Liferay Architect",
+                        "tasks":[
+                            "Development and maintenance of a web/mobile portal with Liferay 6.2",
+                            "Queries performance improvements with MySQL",
+                            "New development of a real state internal web portal with Liferay 7"
+                        ]
+                    },
+                    {
+                        "duration":"Nov 2018 - Feb 2019",
+                        "position":"Full Stack developer",
+                        "tasks":[
+                            "API Portal configuration and styling with APIGee",
+                            "Technologies: Drupal, Apigee, Sass..."
+                        ]
+                    },
+                    {
+                        "duration":"Oct 2015 - May 2018",
+                        "position":"Full Stack / Liferay developer",
+                        "tasks":[
+                            "Development and maintenance of a intern and extern insurance portals with Liferay 6.2 and Websphere/JBoss (Themes, Layouts, Application Templates, Web Content Templates…)",
+                            "Widgets maintenance and functional testing",
+                            "Frontend Technologies: Javascript, Jquery, Bootstrap...",
+                            "Backend Technologies: Java, Ajax, JSON, Velocity, SQL, Selenium..."
+                        ]
+                    }
+                ]
+            },
+            {
+                "company":"Lavinia Interactiva",
+                "jobs":[
+                    {
+                        "duration":"Aug 2014 - Oct 2015",
+                        "position":"Software Engineer",
+                        "tasks":[
+                            "Development and maintenance of a Social Portal with Liferay 6.1 with JBoss (Multiple organizations, multiple languages...)",
+                            "Frontend Technologies: Javascript, Jquery, Bootstrap...",
+                            "Backend Technologies: Java, MySql, Ajax, JSON, XML..."
+                        ]
+                    }
+                ]
+            },
+            {
+                "company":"K-Lagan",
+                "jobs":[
+                    {
+                        "duration":"Aug 2013 - Aug 2014",
+                        "position":"Software Engineer",
+                        "tasks":[
+                            "Development of a Social Portal with Liferay 6.1",
+                            "Database migration from Oracle to Liferay MySQL",
+                            "Development and maintenance of a known pharmaceutical Web Portal with OAS using Java, Struts, UrlRewrite (Backend), Javascript, Jquery, Bootstrap (FrontEnd)",
+                            "Maintenance and queries for statistical purposes of MySQL and Oracle databases"
+                        ]
+                    }
+                ]
+            },
+            {
                 "company":"Freelance",
                 "jobs":[
                     {
-                        "duration":"2012 - Now",
+                        "duration":"2012 - 2013",
                         "position":"Web Developer",
                         "tasks":[
                             "Developing a Gaming Social Network using Google App Engine. Techs in the server side: 'Python, NoSQL, Memcache, Jinja2', and in the client side:'HTML5, CSS3, Javascript, JQuery, Ajax, Json, KinectJS.'"
@@ -99,6 +205,7 @@
             }
         ],
         "habilities":[
+            "Team leadership and formation",
             "Design and development of Websites",
             "Design and development of Java J2EE Applications",
             "Design and maintenance of databases",
@@ -118,7 +225,7 @@
     },
     "es":{
         "address": "08014 Barcelona (España)",
-        "title": "Full Stack Developer",
+        "title": "Desarrollador Full Stack",
         "summary":["Full Stack Developer siempre en desarrollo y apasionado por las nuevas tecnologías. Actualmente las tecnologías que más uso son Liferay, RESTful APIs, Angular, Javascript y Sass. Este currículum es un proyecto hecho hace tiempo (2013) que ha sido actualizado y adaptado a día de hoy (Oct 2020). Con cada juego completado se desbloquea una parte de mi perfil y al conseguir todas las estrellas de oro aparece una 'sorpresa'."],
         "education":[
                 {
@@ -146,13 +253,83 @@
         ],
         "experience":[
             {
+                "company":"Sopra Steria",
+                "jobs":[
+                    {
+                        "duration":"Nov 2019 - Actualidad",
+                        "position":"Desarrollador Full Stack",
+                        "tasks":[
+                            "Desarrollo de un portal web con Angular y Springboot",
+                            "Migración de componentes Angular a una nueva esctructura interna",
+                            "Tecnologías: Angular, SpringBoot, RESTful API, Sass, Java, Kotlin..."
+                        ]
+                    },
+                    {
+                        "duration":"Feb 2019 - Nov 2019",
+                        "position":"Desarrollador Full Stack / Arquitecto Liferay",
+                        "tasks":[
+                            "Desarrollo y mantenimiento de un portal web/móvil en Liferay 6.2",
+                            "Mejora del rendimiento de consultas con MySQL",
+                            "Nuevo desarrollo de un portal interno de agencia inmobiliaria con Liferay 7"
+                        ]
+                    },
+                    {
+                        "duration":"Nov 2018 - Feb 2019",
+                        "position":"Desarrollador Full Stack",
+                        "tasks":[
+                            "Configuración y maquetación de un Portal con APIGee",
+                            "Tecnologías: Drupal, Apigee, Sass..."
+                        ]
+                    },
+                    {
+                        "duration":"Oct 2015 - May 2018",
+                        "position":"Desarrollador Full Stack y Liferay",
+                        "tasks":[
+                            "Desarrollo y mantenimiento de portales internos y externos para una agencia de seguros con Liferay 6.2 y Websphere/JBoss (Themes, Layouts, Application Templates, Web Content Templates…)",
+                            "Mantenimiento de widgets y tests funcionales",
+                            "Tecnologías Frontend: Javascript, Jquery, Bootstrap...",
+                            "Tecnologías Backend: Java, Ajax, JSON, Velocity, SQL, Selenium..."
+                        ]
+                    }
+                ]
+            },
+            {
+                "company":"Lavinia Interactiva",
+                "jobs":[
+                    {
+                        "duration":"Ago 2014 - Oct 2015",
+                        "position":"Ingeniero de Software",
+                        "tasks":[
+                            "Desarrollo y mantenimiento de un portal social con Liferay 6.1 y JBoss (Múltiples organizaciones, múltiples idiomas...)",
+                            "Tecnologías Frontend: Javascript, Jquery, Bootstrap...",
+                            "Tecnologías Backend: Java, MySql, Ajax, JSON, XML..."
+                        ]
+                    }
+                ]
+            },
+            {
+                "company":"K-Lagan",
+                "jobs":[
+                    {
+                        "duration":"Ago 2013 - Ago 2014",
+                        "position":"Ingeniero de Software",
+                        "tasks":[
+                            "Desarrollo de un portal social con Liferay 6.1",
+                            "Migración de Base de datos Oracle a una Liferay con MySQL",
+                            "Desarrollo y mantenimiento de un portal web de una conocida farmacéutica con OAS usando Java, Struts, UrlRewrite (Backend), Javascript, Jquery, Bootstrap (FrontEnd)",
+                            "Mantenimiento y consultas con fines estadísticos en bases de datos MySQL y Oracle"
+                        ]
+                    }
+                ]
+            },
+            {
                 "company":"Freelance",
                 "jobs":[
                     {
-                        "duration":"2012 - Actualidad",
+                        "duration":"2012 - 2013",
                         "position":"Desarollador Web",
                         "tasks":[
-                            "En desarrollo de una red social de juegos usando Google App Engine. Las tecnologías usadas en el servidor son: 'Python, NoSQL, Memcache, Jinja2', y en el cliente:'HTML5, CSS3, Javascript, JQuery, Ajax, Json, KinectJS.'"
+                            "Desarrollando de una red social de juegos usando Google App Engine. Las tecnologías usadas en el servidor son: 'Python, NoSQL, Memcache, Jinja2', y en el cliente:'HTML5, CSS3, Javascript, JQuery, Ajax, Json, KinectJS.'"
                         ]
                     }
                 ]
@@ -187,6 +364,7 @@
             }
         ],
         "habilities":[
+            "Liderage y formación de equipos",
             "Diseño y desarrollo de páginas web",
             "Diseño y desarrollo de aplicaciones en Java J2EE",
             "Diseño y mantenimiento de bases de datos",
@@ -206,7 +384,7 @@
     },
     "ca":{
         "address": "08014 Barcelona (Espanya)",
-        "title": "Full Stack Developer",
+        "title": "Desenvolupador Full Stack",
         "summary": ["Full Stack Developer sempre en desenvolupament i apassionat per les noves tecnologies. Actualment les tecnologies que més utilitzo són Liferay, RESTful APIs, Angular, Javascript i Sass. Aquest currículum és un projecte fet fa temps (2013) que he actualizat i adaptat a dia d'avui (Oct 2020). Amb cada joc completat desbloquegeu una part del meu perfil i si aconseguiu totes les estrelles d'or tindreu una 'sorpresa'."],
         "education":[
             {
@@ -234,13 +412,83 @@
         ],
         "experience":[
             {
+                "company":"Sopra Steria",
+                "jobs":[
+                    {
+                        "duration":"Nov 2019 - Actualitat",
+                        "position":"Desenvolupador Full Stack",
+                        "tasks":[
+                            "Desenvolupament d'un portal web amb Angular i Springboot",
+                            "Migració de components Angular a una nova esctructura interna",
+                            "Tecnologies: Angular, SpringBoot, RESTful API, Sass, Java, Kotlin..."
+                        ]
+                    },
+                    {
+                        "duration":"Feb 2019 - Nov 2019",
+                        "position":"Desenvolupador Full Stack / Arquitecte Liferay",
+                        "tasks":[
+                            "Desenvolupament y manteniment d'un portal web/mòbil en Liferay 6.2",
+                            "Millora del rendiment de consultes amb MySQL",
+                            "Nou desenvolupament d'un portal intern d'agència inmobiliaria amb Liferay 7"
+                        ]
+                    },
+                    {
+                        "duration":"Nov 2018 - Feb 2019",
+                        "position":"Desenvolupador Full Stack",
+                        "tasks":[
+                            "Configuració i maquetació d'un Portal amb APIGee",
+                            "Tecnologies: Drupal, Apigee, Sass..."
+                        ]
+                    },
+                    {
+                        "duration":"Oct 2015 - Mai 2018",
+                        "position":"Desenvolupador Full Stack i Liferay",
+                        "tasks":[
+                            "Desenvolupament i manteniment de portals interns i externs per una agència d'assegurances amb Liferay 6.2 i Websphere/JBoss (Themes, Layouts, Application Templates, Web Content Templates…)",
+                            "Manteniment de widgets i tests funcionals",
+                            "Tecnologies Frontend: Javascript, Jquery, Bootstrap...",
+                            "Tecnologies Backend: Java, Ajax, JSON, Velocity, SQL, Selenium..."
+                        ]
+                    }
+                ]
+            },
+            {
+                "company":"Lavinia Interactiva",
+                "jobs":[
+                    {
+                        "duration":"Ago 2014 - Oct 2015",
+                        "position":"Enginyer de Software",
+                        "tasks":[
+                            "Desenvolupament i manteniment d'un portal social amb Liferay 6.1 y JBoss (Múltiples organitzacions, múltiples idiomes...)",
+                            "Tecnologies Frontend: Javascript, Jquery, Bootstrap...",
+                            "Tecnologies Backend: Java, MySql, Ajax, JSON, XML..."
+                        ]
+                    }
+                ]
+            },
+            {
+                "company":"K-Lagan",
+                "jobs":[
+                    {
+                        "duration":"Ago 2013 - Ago 2014",
+                        "position":"Enginyer de Software",
+                        "tasks":[
+                            "Desenvolupament d'un portal social amb Liferay 6.1",
+                            "Migració de Base de dades Oracle a una Liferay amb MySQL",
+                            "Desenvolupament i manteniment d'un portal web d'una coneguda farmacèutica amb OAS utilitzant Java, Struts, UrlRewrite (Backend), Javascript, Jquery, Bootstrap (FrontEnd)",
+                            "Manteniment i consultes estadístiques en bases de dades MySQL i Oracle"
+                        ]
+                    }
+                ]
+            },
+            {
                 "company":"Freelance",
                 "jobs":[
                     {
-                        "duration":"2012 - Actualitat",
+                        "duration":"2012 - 2013",
                         "position":"Desenvolupador Web",
                         "tasks":[
-                            "En desenvolupament d'una xarxa social de jocs utilitzant Google App Engine. Les tecnologies utilitzades en el servidor són: 'Python, NoSQL, Memcache, Jinja2', i en el client:'HTML5, CSS3, Javascript, JQuery, Ajax, Json, KinectJS.'"
+                            "Desenvolupant una xarxa social de jocs utilitzant Google App Engine. Les tecnologies utilitzades en el servidor són: 'Python, NoSQL, Memcache, Jinja2', i en el client:'HTML5, CSS3, Javascript, JQuery, Ajax, Json, KinectJS.'"
                         ]
                     }
                 ]
@@ -275,6 +523,7 @@
             }
         ],
         "habilities":[
+            "Lideratge i formació d'equips",
             "Disseny i desenvolupament de pàgines web",
             "Disseny i desenvolupament d'aplicacions en Java J2EE",
             "Disseny i manteniment de bases de dades",

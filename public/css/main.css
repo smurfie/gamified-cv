@@ -183,13 +183,13 @@ li, #personal>p, #summary>p{
 .tech1{font-size: 60%;}
 .tech2{font-size: 70%;}
 .tech3{font-size: 80%;}
-.tech4{font-size: 90%;}
-.tech5{font-size: 100%;}
-.tech6{font-size: 110%;}
-.tech7{font-size: 120%;}
-.tech8{font-size: 130%;}
-.tech9{font-size: 140%;}
+.tech4{font-size: 100%;}
+.tech5{font-size: 120%;}
+.tech6{font-size: 140%;}
+.tech7{font-size: 160%;}
+.tech8{font-size: 180%;}
+.tech9{font-size: 200%;}
 
 #techs>span{
-    margin: 2px;
+    margin-right: 5px;
 }
